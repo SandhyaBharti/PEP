@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        .name{
+            color: blue;
+            font: 900;
+            font-family: 'Times New Roman', Times, serif;
+            font-display: swap;
+        }
+        .age{
+            color: blue;
+        }
+        .form{
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Student Details</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+        </tr>
+        <tr>
+            <td>Sandhya</td>
+            <td>22</td>
+            <td>HTML</td>
+        </tr>
+        <tr>
+            <td>Diptee</td>
+            <td>20</td>
+            <td>CSS</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h2>Another student details table</h2>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Roll no.</th>
+                <th>Name</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Sandhya</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Dipti</td>
+                <td>97</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+
+    <h3>Rowspan (Merge Rows)</h3>
+    <table border="3">
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Sandhya</td>
+            <td>Maths</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <!-- <td rowspan="4">Dipti</td> -->
+            <td>Science</td>
+            <td>94</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">Dipti</td>
+            <td>Sci</td>
+            <td>93</td>
+        </tr>
+        <tr>
+            <td>SSt</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>Bio</td>
+            <td>99</td>
+        </tr>
+
+        <tr>
+            <td rowspan="5">Anshu</td>
+            <td>Hindi</td>
+            <td>88</td>
+        </tr>
+        <tr>
+            <td>Eng</td>
+            <td>87</td>
+        </tr>
+        <tr>
+            <td>Maths</td>
+            <td>67</td>
+        </tr>
+        <tr>
+            <td>SSt</td>
+            <td>89</td>
+        </tr>
+        <tr>
+            <td>Sci</td>
+            <td>67</td>
+        </tr>
+        
+    </table>
+    <hr>
+
+    <h2>Colspan (Merge columns)</h2>
+    <table border="4">
+        <tr>
+            <th colspan="2">Student info</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>Sandhya</td>
+        </tr>
+
+        <tr>
+            <td>Grade</td>
+            <td>A+</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h2>Time table</h2>
+    <table border="5">
+        <tr>
+            <th>Day</th>
+        </tr>
+        <tr>
+            <td>Subject</td>
+            <td>English</td>
+            <td>Maths</td>
+            <td>SSt</td>
+            <td>Lunch Break</td>
+            <td>Hindi</td>
+            <td>Computer</td>
+            <td>Diary Checking Period</td>
+        </tr>
+    </table>
+    
+    <p align="center">
+        This is a <span> span element</span> used for styling text.
+    </p>
+
+    <p align="left">
+        <strong>Strong text</strong> and <b>bold text</b> are inline elements.
+    </p>
+    <p align="right"> 
+        <em>Emphasized text</em> and <i>italic text</i> are also inline.
+    </p><hr>
+
+    <h2 class="form">Form</h2>
+
+    <form>
+        <label class="name">Name:</label>
+        <input type="text" placeholder="enter your name"><br><br>
+        <label class="age">Age:</label>
+        <input type="number" placeholder="write your age">
+    </form>
+    <br><hr>
+
+    <img src="download (1).jpg" alt="image" width="300px" height="100px">
+
+    <a href="download (1).jpg"><img src="download (1).jpg" alt="image"></a>
+    <a href="sandhyabharti298@gmail.com">Send email</a>
+    <a href="tel:+1234567890">Call now</a>
+    <a href="https://www.youtube.com"><button>Visit youtube</button></a>
+    <a href="download (1).jpg" download>Download image</a>
+    <a href="https://www.youtube.com/" title="Visit youtube">link text</a>
+    <hr>
+
+    <a href="https://youtu.be/MO42Ct_h9xc?si=Qxuyo6wwx1kWD_Cy">
+        Click to open in the same tab.</a> <hr>
+
+    <a href="https://youtu.be/MO42Ct_h9xc?si=Qxuyo6wwx1kWD_Cy" target="_blank">
+        Click to open in the new tab</a> <hr>
+
+    <a href="https://youtu.be/MO42Ct_h9xc?si=Qxuyo6wwx1kWD_Cy" target="_self">
+        Click to open in same window or tab</a> <hr>
+
+    <a href="https://youtu.be/MO42Ct_h9xc?si=Qxuyo6wwx1kWD_Cy" target="_top">
+        Click to open in full body of window</a> <hr>
+
+    <a href="https://youtu.be/MO42Ct_h9xc?si=Qxuyo6wwx1kWD_Cy" target="_parent">
+        Click to open in parent frame</a> <hr>
+
+    <h2 style="font-family: 'Times New Roman', Times, serif;"> 
+        Hello Sandhya
+    </h2>
+    <h3 style="color: coral;">
+        Welcome to html
+    </h3>
+
+    <h1 style="font-size: 50px;">This is the Main Heading</h1>
+	<h2>This is a Subheading</h2>
+	<h3>This is a Smaller Subheading</h3>
+	<h4>This is a Sub-Subheading</h4>
+	<h5>This is a Minor Subheading</h5>
+	<h6>This is the Smallest Heading</h6>
+</body>
+</html>

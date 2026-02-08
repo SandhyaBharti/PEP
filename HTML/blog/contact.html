@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: lightgoldenrodyellow;">
+    <h2 style="text-align: center;">Contact Page</h2>
+
+    <div class="contact-box">
+        <form action="contact-form">
+            <div id="name">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Write your name" minlength="3" required> <br><br>
+            </div>
+            <div id="email">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Write your email" required> <br><br>
+            </div>
+            <div id="msg">
+                <label for="feedback">Feedback</label>
+                <textarea name="feedback" id="msg" minlength="10" required></textarea>
+            </div>
+            <button type="submit" onclick="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+ul {
+    list-style: decimal;     
+        /* press (ctrl+space bar) to see all values  */
+}
+ol {
+    list-style: lower-alpha;
+}

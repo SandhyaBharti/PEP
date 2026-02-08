@@ -1,0 +1,53 @@
+h1 {
+    color: blue;
+}
+body {
+    background-color: antiquewhite;
+}
+button {
+    background-color: brown;
+    color: azure;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: 5px solid black;
+    margin: 10px;
+    text-align: center;
+    background-color: cadetblue;
+}
+
+#box{
+height: 300px;
+width: 300px;
+background-color: cornflowerblue;    
+color: white;
+margin: 20px;
+font-size: medium;
+border: 6px double brown;
+}
+
+.paragraph {
+    color: red;
+}
+
+.newparagraph {
+    color: green;
+}
+
+.events {
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    color: red;
+    border: 10px dashed red;
+}
+.dark {
+    background-color: black;
+    color: white;
+}
+.light {
+    background-color: white;
+    color: black;
+}

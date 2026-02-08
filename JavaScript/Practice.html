@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice JavaScript</title>
+    <link rel="stylesheet" href="Practice.css">
+</head>
+<body>
+    <h1>DOM Demo</h1>
+    <h4>Topic: Starter code</h4>
+    <p>Let's learn the JS</p>
+    <button>Click me</button>
+
+    <!-- 1. Create a H2 heading element with text - "Hello JavaScript". Append "from LPU students" to this text using JS.  -->
+     <h2>Hello JavaScript</h2>
+     <script>
+        let h2 = document.querySelector("h2");
+        console.log(h2)
+        h2.innerText = h2.innerText + " " + "from LPU students";
+     </script>
+
+     <!-- 2. Create 3 divs with common class name - "box". Access them & add some unique text to each of them. -->
+      <h2>Common divs</h2>
+      <div class="box">1st div</div>
+      <div class="box">2nd div</div>
+      <div class="box">3rd div</div>
+      <div class="box">4th div</div>
+      <div class="box">5th div</div>
+      <div class="box">6th div</div>
+      <div class="box">7th div</div>
+      <div class="box">8th div</div>
+      <div class="box">9th div</div>
+      <script>
+        let divs = document.querySelectorAll(".box");
+        let idx = 1;
+        for(div of divs) {
+           div.innerText = `new unique value ${idx}`;
+           idx++;
+        }
+      </script>
+
+      <!-- Attributes -->
+       <div id="box" name="JSDiv"> this is a div
+        <ul>list
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+        </ul>
+       </div>
+       <p class="para">this is a simple para</p>
+
+       <!-- 1. Create a new button element. Give it a text "click me", background color of red & text color of white.
+        Insert the button as the first element inside the body tag. -->
+        <script>
+            let newBtn = document.querySelector("newBtn");
+            newBtn.innerText = "click me";
+            newBtn.style.backgroundColor = "lightblue";
+            newBtn.style.color = "red";
+            document.querySelector("body").prepend(newBtn);
+        </script>
+
+        <!-- 2. Create a <p> tag in html, give it a class & some styling.
+            Now create a new class in CSS and try to append this class to the <p> element
+                Did you notice, how you overwrite the class name when you add a new  -->
+                <p class="paragraph">it is a paragraph</p>
+
+                <!-- Events -->
+                 <button id="btn1" onclick="console.log('u clicked the button')">Click me!</button>
+                 <button ondblclick="console.log('clicked 2 times')">click me 2 times</button>
+                 <div class="events" onmouseover="console.log('u r inside div')">This is a box.</div>
+
+                <!-- // 1. Create a toggle button that changes the screen to dark-mode when clicked & light-mode when clicked again. -->
+                 <button id="mode">change mode </button>
+                 <p>this is a toggle button to change the theme to light and dark</p>
+
+                 <!-- 2. create a button that write something use mouseover event -->
+                  <button id="mouseover">mouseover button</button>
+                  <p>this is a mouseover button</p>
+
+
+    <script src="Practice.js"></script>
+</body>
+</html>

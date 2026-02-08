@@ -1,0 +1,24 @@
+.parent {
+    width: 500px;
+    height: 300px;
+    background-color: brown;
+    position: relative;
+    font-size:x-large;
+    font: 900;
+    color: white;
+
+}
+.child {
+    /* position: static; */
+    /* position: absolute;   */ /* while using this mark parent position relative*/
+    /* position: relative; */
+    /* position: fixed; */
+    position: sticky;
+    top: 30px;
+    left: 50px;
+    width: 150px;
+    height: 150px;
+    background-color: greenyellow;
+    color:black;
+
+}

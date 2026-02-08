@@ -1,0 +1,46 @@
+p{
+    color: blue;
+}
+
+
+/* Types of Selector: 
+1. Universal selector: for selecting everything by using (*) symbol */
+* {
+    background-color: lightblue;
+    margin: auto;
+    padding: 0%;
+    box-sizing: content-box;
+    box-sizing: border-box;
+
+}
+
+/* 2. ID selector: for id of a particular element by using (#id name) sybmol, id selector is specific */
+#section {
+    background-color: blueviolet;
+
+}
+#greet {
+    width: auto;
+    color: blue;
+    border: 5px dashed black;
+    padding: 20px;
+    background-color: aquamarine;
+}
+/* 3. class selector: common properties for many elements by using (.) dot with class name*/
+.text{
+    color: red;
+    margin: 10px 0;
+}
+
+/* pseudo selector:  */
+p:hover {
+    color: white;
+}
+
+
+
+/* CSS Box Model: contains 4 things => margin(outside the element), border, 
+padding(inside the border and element), content */
+
+/* https://github.com/exewhyz/html-css-basics-lpu */
+

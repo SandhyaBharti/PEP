@@ -1,0 +1,86 @@
+Window Object => The window object represents an open window in a browser. It is brower's object(not JavaScript's) &
+is automatically created by the browser.
+It is a "global" object with lots of properties and methods.
+window.document
+console.dir(window.document)
+
+DOM => When a web page is loaded, the browser creates a Document Object Model(DOM) of the page
+It is a tree like structure.
+window -> document -> html
+                        html -> head -> meta, meta, title, link
+                        html -> body -> div -> img, h1, p, div 
+                                & body -> script
+
+DOM Manipulation => 
+    1. selecting with id -> document.getElementById("myId")
+    2. selecting with class -> document.getElementsByClassName("myClass")
+    3. selecting with tag -> document.getElementsByTag("p")
+    4. querySelector -> document.querySelector("myId/myClass/tag") : returns first element 
+                        document.querySelectorAll("myID/myClass/tag") : returns all elements (NodeList)
+Properties: tagName -> returns tag for element nodes 
+            innerText -> returns the text content of the element and all its children
+            innerHTML -> returns the plain text or HTML contents in the element
+            textContent -> returns textual content even for hidden elements 
+
+Attributes: getAttribute(attr) // to get the sttribute value
+            setAttribute(attr, value) // to set the attribute value the
+
+Style: node.style 
+
+Insert Elements: 1. node.append( el ) -> adds at the end of node(inside)
+                2. node.preappend( el ) -> adds at the start of node (inside)
+                3. node.beforeadd( el ) -> adds before the node (outside)
+                4. node.after( el ) -> adds after the node(outside)
+
+Delete Element : node.remove() -> removes the node 
+// appendChild and removeChild
+
+//Events: The cahnge in the state of an object is known as an Event. 
+Events are fired to notify code of "intresting changes" that may affect code execution.
+1. Mouse events (click, double click etc.)
+2. Keyboard events (keypress, keyup, keydown)
+3. Form events (submit etc.)
+4. Print event & many more 
+                                
+Event Object: It is a special object that has details about the event.
+All event handlers have access to the Event Object's properties and methods.
+
+Event Listeners: node.addEventListener(event, callback)
+                 node.addEventListener(event, callback)
+                the callback reference should be same to remove 
+
+Classes and Objects: 
+Prototype in JS -> A javaScript is an entity having state and behaviour(properties and method).
+JS objects have a special property called prototype.
+We can set prototype using __proto__ 
+
+* if object & prototype have same method, object's method will be used.
+
+Classes in JS => Class is a program-code template for creating objects.
+Those objects will have some state (variables) & some behaviour (functions) inside it.
+class MyClass{
+    constructor(){...}
+    myMethod(){...}
+}
+let myObj = new MyClass();
+
+Constructor in JS:Constructor method is: 
+a. automatically invoked by new -> constructor(){...}
+b. initializes object -> myMethod(){...}
+
+Inheritance in JS: inheritance is passing down properties & methods from parent class to child class.
+class Parent {}
+class Child extends Parent {}
+*If Child & Parent have same method, child's method will be used.[Method Overriding]
+
+Super Keyword: The super keyword is used to call the constructor of its parent class to access the parent's properties and methods.
+super(args)  // calls Parent's constructor
+super.parentMethod(args)
+
+Error Handling: 
+try-catch
+try{
+    ...normal code
+} catch (Err) {// err is error object
+...handling error
+}
